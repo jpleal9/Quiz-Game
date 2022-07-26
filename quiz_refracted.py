@@ -72,7 +72,7 @@ def ask_question(question,alternatives):
         print("⭐That is correct!!⭐\n------------------------------\n")
         return 1
     else:
-        print("😭Unfortunately the answer is {correct_answer!r}😭\n------------------------------\n")
+        print(f"😭Unfortunately the answer is {correct_answer!r}😭\n------------------------------\n")
         return 0
 
 def run_quiz():
