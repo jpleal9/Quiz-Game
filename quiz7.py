@@ -3,7 +3,7 @@
 from string import ascii_lowercase
 
 QUESTIONS = {
-    "When was the last time the New England Patriors where Super Bowl champions?":[
+    "When was the last time the New England Patriots where Super Bowl champions?":[
         "2019","2020","2018","2017"],
 
     "What is the secret name of Batman?":[
@@ -13,7 +13,7 @@ QUESTIONS = {
         "Metallica","Kate Bush","Queen","Pink Floyd"],
 
     "What's the name of Marshal Ericksen's father from How I Met Your Mother?":[
-        "Marvin","Marshal","Marcus","Marcelus"]
+        "Marvin","Marshal","Marcus","Marcellus"]
 
 }
 
@@ -29,14 +29,14 @@ for num, (question,alternatives) in enumerate(QUESTIONS.items(), start=1): #The 
     while(answer_label := input("\nYour answer is...")) not in labeled_alternatives:
         #The while cycle will keep the input correct, between the 4 possible answers
         print(f"Please answer one of {', '.join(labeled_alternatives)}")
-        #The print will requestion for it to be on the valid input
+        #The print will re-question for it to be on the valid input
 
     answer = labeled_alternatives[answer_label] #The input
     if answer == correct_answer:
         print("⭐That is correct!!⭐\n------------------------------\n")
         num_correct +=1
     else:
-        print(f"😭Unfortunatelly the answer is {correct_answer!r}😭\n------------------------------\n")
+        print(f"😭Unfortunately the answer is {correct_answer!r}😭\n------------------------------\n")
 
 print(f"\nYour score is {num_correct} in {num} questions!\n")
 
