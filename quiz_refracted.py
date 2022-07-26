@@ -43,8 +43,8 @@ def get_answers(question,alternatives):
     return labeled_alternatives[answer_label]
 
 def ask_question(question,alternatives):
-    correct_answer = alternatives[0]
-    ordered_alternatives = random.sample(alternatives, k = len(alternatives))
+    correct_answer = alternatives[0] #Because correct answer is always the first one
+    ordered_alternatives = random.sample(alternatives, k = len(alternatives)) #Randomizes the possible answers
 
     answer = get_answers(question, alternatives)
     if answer == correct_answer:
@@ -64,12 +64,14 @@ def run_quiz():
     
     print(f"\nYour score is {num_correct} in {num} questions!\n")
 
-    if num_correct == 4: #This one is my own, a way to give a final message to the quiz
+    if num_correct == 4: #This one is my own, a way to give a final message to the quiz depending on the
+        # amount of right answers
         print("Amazing job! You really are a force to be reckoned!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
     elif num_correct in range(2,4):
         print("Good job, but there is room for improvement!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
     else:
         print("Man you suck, try again!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
 
-if __name__ == "__main__":
+if __name__ == "__main__": #This makes run_quiz() to run when we call the .py file, but not when we import
+    # the file as a module
     run_quiz()
