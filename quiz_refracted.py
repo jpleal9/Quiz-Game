@@ -67,7 +67,7 @@ def ask_question(question,alternatives):
     correct_answer = alternatives[0] #Because correct answer is always the first one
     ordered_alternatives = random.sample(alternatives, k = len(alternatives)) #Randomizes the possible answers
 
-    answer = get_answers(question, alternatives)
+    answer = get_answers(question, ordered_alternatives)
     if answer == correct_answer:
         print("⭐That is correct!!⭐\n------------------------------\n")
         return 1
@@ -85,10 +85,10 @@ def run_quiz():
     
     print(f"\nYour score is {num_correct} in {num} questions!\n")
 
-    if num_correct == 4: #This one is my own, a way to give a final message to the quiz depending on the
+    if num_correct == 5: #This one is my own, a way to give a final message to the quiz depending on the
         # amount of right answers
         print("Amazing job! You really are a force to be reckoned!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
-    elif num_correct in range(2,4):
+    elif num_correct in range(2,5):
         print("Good job, but there is room for improvement!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
     else:
         print("Man you suck, try again!\n\n-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n")
