@@ -16,7 +16,28 @@ QUESTIONS = {
         "Metallica","Kate Bush","Queen","Pink Floyd"],
 
     "What's the name of Marshal Ericksen's father from How I Met Your Mother?":[
-        "Marvin","Marshal","Marcus","Marcellus"]
+        "Marvin","Marshal","Marcus","Marcellus"],
+
+    "Kratos is the main character of what video game series?":[
+        "God of War","Pokemon","Horizon Zero Dawn","Stranded"],
+
+    "Who plays Hannibal in the Silence of the Lambs movie?":[
+        "Anthony Hopkins","Morgan Freeman","Michael Caine","Sean Connery"],
+
+    "What is the capital of Ireland?":[
+        "Dublin","Galway","Cork","Waterford"],
+
+    "Where did sushi originate?":[
+        "China","Japan","Korea","India"],
+    
+    "What is a nargle?":[
+        "I have no idea","A monster","A beast","A man"],
+
+    "What is the symbol for potassium?":[
+        "K","P","T","PT"],
+
+    "Which infinity stone was located on Vormir?":[
+        "Soul Stone","Time Stone","Mind Stone","Reality Stone"]
 
 }
 
