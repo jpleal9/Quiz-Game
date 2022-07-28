@@ -1,4 +1,4 @@
-# Quizz-Game
+# Quiz-Game
 
 A quiz game project present on https://realpython.com/python-quiz-application/
 
